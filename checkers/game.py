@@ -9,7 +9,7 @@ class Game:
     
     def update(self):
         self.board.draw(self.win)
-        self.draw_valid_moves(self.valid_moves)
+        self.draw_valid_moves(self.valid_moves)  # to increase diificullty let deactivate this function
         pygame.display.update()
 
     def _init(self):
@@ -51,7 +51,8 @@ class Game:
             return False
 
         return True
-
+    
+    # to increase diificullty let deactivate this function():
     def draw_valid_moves(self, moves):
         for move in moves:
             row, col = move
